@@ -8,12 +8,13 @@ def draw_pix(ax,l,c,col):
 def draw_fig(mat : np.ndarray, width = 1):
 
     label_size = 10
-    # Créer une figure et un axe
-    fig, ax = plt.subplots(figsize=(10, 10))
-
     # Paramètres du quadrillage
     nombre_de_lignes = mat.shape[0]
     nombre_de_colonnes = mat.shape[1]
+    # Créer une figure et un axe
+    fig, ax = plt.subplots(figsize=(int(0.25*nombre_de_lignes), int(0.25 * nombre_de_colonnes)))
+
+
 
     print(f"col {nombre_de_colonnes}, row {nombre_de_lignes}")
 
